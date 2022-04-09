@@ -35,7 +35,7 @@ function toggle() {
     </div>
 
     <div
-      class="fixed right-4 top-4 h-5 w-5 cursor-pointer rounded-full duration-1000 ease-in-out md:right-12 md:top-12"
+      class="fixed right-4 top-4 z-10 h-5 w-5 cursor-pointer rounded-full duration-1000 ease-in-out md:right-12 md:top-12"
       :class="state.enableDarkMode ? 'bg-white' : 'bg-black'"
       @click="toggle()"
     ></div>
