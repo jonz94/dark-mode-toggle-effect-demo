@@ -47,13 +47,16 @@ function toggle() {
       </section>
 
       <section>
+        <p class="space-x-1">
+          <span>🔗</span>
+          <span>原文出處：</span>
+        </p>
         <p>
-          <span>🔗 原文出處：</span>
           <span>
             <a
               href="https://osxchat.tumblr.com/post/29205181318/mcbopomofo-hidden-settings"
               target="_blank"
-              class="underline"
+              class="break-all underline"
               >https://osxchat.tumblr.com/post/29205181318/mcbopomofo-hidden-settings</a
             >
           </span>
