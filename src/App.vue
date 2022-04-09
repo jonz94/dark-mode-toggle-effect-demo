@@ -40,15 +40,13 @@ function toggle() {
       @click="toggle()"
     ></div>
 
-    <main class="flex w-screen max-w-2xl flex-col gap-8 px-4 py-8 text-white mix-blend-difference">
-      <section class="flex flex-col gap-2">
-        <h1 class="text-2xl font-bold"># 小麥注音的隱藏設定</h1>
-        <p>小麥注音從 0.9.4 版開始，多了幾個隱藏設定。這些設定都可以透過指令來調整。</p>
-      </section>
+    <!-- hacks to make css mix blend mode will not affect the color of the emoji -->
+    <div class="absolute w-screen max-w-2xl justify-self-center px-4 pt-8">🔗</div>
 
+    <main class="flex w-screen max-w-2xl flex-col gap-8 px-4 py-8 text-white mix-blend-difference">
       <section>
         <p class="space-x-1">
-          <span>🔗</span>
+          <span class="invisible">🔗</span>
           <span>原文出處：</span>
         </p>
         <p>
@@ -61,6 +59,11 @@ function toggle() {
             >
           </span>
         </p>
+      </section>
+
+      <section class="flex flex-col gap-2">
+        <h1 class="text-2xl font-bold"># 小麥注音的隱藏設定</h1>
+        <p>小麥注音從 0.9.4 版開始，多了幾個隱藏設定。這些設定都可以透過指令來調整。</p>
       </section>
 
       <section class="flex flex-col gap-2">
