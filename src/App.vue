@@ -34,11 +34,11 @@ function toggle() {
       </div>
     </div>
 
-    <div
-      class="fixed right-4 top-4 z-10 h-5 w-5 cursor-pointer rounded-full duration-1000 ease-in-out md:right-12 md:top-12"
+    <button
+      class="fixed right-4 top-4 z-10 h-5 w-5 rounded-full duration-1000 ease-in-out md:right-12 md:top-12"
       :class="state.enableDarkMode ? 'bg-white' : 'bg-black'"
       @click="toggle()"
-    ></div>
+    ></button>
 
     <!-- hacks to make css mix blend mode will not affect the color of the emoji -->
     <div class="absolute w-screen max-w-2xl justify-self-center px-4 pt-8">🔗</div>
